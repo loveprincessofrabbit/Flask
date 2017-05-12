@@ -1,0 +1,10 @@
+            <a href="{{ url_for('.user', username=post.author.username) }}">
+                <img class="img-rounded profile-thumbnail" src="{{ post.author.gravatar(size=40) }}">
+            </a>
+
+add  to line 21
+
+
+<div class="post-author"><a href="{{ url_for('.user', username=post.author.username) }}">
+
+add to line 25
