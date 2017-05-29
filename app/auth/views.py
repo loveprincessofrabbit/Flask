@@ -29,10 +29,14 @@ def logout():
 def register():
     form=RegisterForm()
     if form.validate_on_submit():
-        user=User(username=form.user_name.data,password=form.password.data)
+        user=User(username=form.user_name.data,password=form.password.data,protect_answer=form.protect_answer.data)
         db.session.add(user)
         flash('success')
         return redirect(url_for('auth.login'))
     return render_template('auth/register.html',form=form)
 
+@auth.before_app_request
+def before_request():
+    if current_user.is_authenticated:
+        current_user.ping()
         
