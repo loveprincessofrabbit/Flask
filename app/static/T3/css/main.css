@@ -1,0 +1,584 @@
+/* ===================================
+	PORTFOLIO - Responsive Bootstrap Template
+====================================== */
+
+
+/* ===================================
+	PRELOADER
+====================================== */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.status {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin: -70px 0 0 -70px;
+}
+
+
+/* ===================================
+	GENERAL
+====================================== */
+body {
+  position: relative;
+}
+
+html{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+textarea:focus,
+input:focus{
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+header.puge-page-header{
+	-webkit-background-size: cover;
+	height: 330px;
+	background-size: cover;
+	position: relative;
+}
+
+.puge-page-title{
+	position: relative;
+	z-index: 1;
+}
+
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+/* ===================================
+	BACKGROUND COLOR
+====================================== */
+.background-one {
+	background-color: #ffffff;
+}
+
+.background-two {
+	background-color: #f5f5f5;
+}
+
+/* ===================================
+	TYPOGRAPHY
+====================================== */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+h1{
+	font-size: 36px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+h5{
+	font-size: 16px;
+}
+
+h5{
+	font-size: 14px;
+}
+
+a,p,li,input,textarea{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #818181;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+a{
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+a:hover,
+a:focus,
+a:active{
+	outline: 0;
+	text-decoration: none;
+  	border: 0;
+}
+
+.puge-page-title h1{
+	font-size: 36px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0;
+	padding: 70px 0 0;
+	text-align: center;
+}
+
+
+/* ===================================
+	BUTTONS
+====================================== */
+.puge-button-solid{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px 30px;
+	display: inline-block;
+	background-color: #333;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.puge-button-solid:hover{
+	color: #ffffff;
+	background-color: #de5c39;
+}
+
+.puge-button-outline{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px 30px;
+	display: inline-block;
+	background-color: transparent;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.puge-button-outline-light{
+	border: 1px solid #ffffff;
+}
+
+.puge-button-outline-light:hover{
+	color: #ffffff;
+	border: 1px solid transparent;
+}
+
+.puge-button-outline-dark{
+	color: #28292e;
+	border: 1px solid #28292e;
+}
+
+.puge-button-outline-dark:hover{
+	color: #ffffff;
+	border: 1px solid transparent;
+}
+
+.puge-btn-round{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 15px 30px;
+	color: #ffffff;
+	text-align: center;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 	border-radius: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.puge-btn-round:hover{
+	color: #ffffff;
+}
+
+
+
+
+/* ===================================
+	SECTIONS
+====================================== */
+.puge-section-wrapper{
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+.puge-section-header{
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.puge-section-header h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #313131;
+}
+
+.puge-section-header h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #313131;
+}
+
+.puge-section-header h1 span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.puge-section-header p{
+	font-family: 'Raleway', sans-serif;
+}
+
+
+/* ===================================
+	PORTFOLIO
+====================================== */
+.puge-portfolio-section{
+	background-color: #f5f5f5;
+}
+
+.puge-portfolio-filter-btn-group{
+	margin-bottom: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.puge-portfolio-filter-btn-group ul{
+	display: inline-block;
+}
+
+.puge-portfolio-filter-btn-group ul li{
+	float: left;
+}
+
+.puge-portfolio-filter-btn-group ul li a{
+	font-weight: 600;
+	padding: 10px 20px;
+	display: inline-block;
+	border-right: 2px solid #333;
+}
+
+.puge-portfolio-filter-btn-group ul li a:last-child{
+	border-right: none;
+}
+
+.puge-portfolio-filter-btn-group ul li a:hover{
+	color: #818181;
+}
+
+.puge-portfolio-filter-btn-group ul li a.selected{
+	color: #333;
+}
+
+.puge-portfolio-items{
+	overflow: hidden;
+}
+
+.puge-portfolio-items .puge-portfolio-item{
+	width: 25%;
+	height: 280px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #999;
+}
+
+.puge-portfolio-items .puge-portfolio-item img{
+	height: 100%;
+}
+
+.puge-portfolio-items .puge-portfolio-item .puge-portfolio-details-wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(40,41,46,0.8);
+	display: table;
+	opacity: 0;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+.puge-portfolio-item:hover .puge-portfolio-details-wrapper{
+	opacity: 1;
+}
+
+.puge-portfolio-item .puge-portfolio-details{
+	display: table-cell;
+	padding: 50px 0;
+	vertical-align: middle;
+}
+
+.puge-portfolio-item .puge-portfolio-details .puge-portfolio-meta-btn{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.puge-portfolio-details .puge-portfolio-meta-btn ul{
+	display: inline-block;
+}
+
+.puge-portfolio-details .puge-portfolio-meta-btn ul li{
+	width: 35px;
+	height: 35px;
+	background-color: rgba(255,255,255,0.3);
+	float: left;
+	margin-right: 10px;
+	opacity: 0;
+	-webkit-transition: all .55s;
+	   -moz-transition: all .55s;
+	    -ms-transition: all .55s;
+	     -o-transition: all .55s;
+	        transition: all .55s;
+}
+
+.puge-portfolio-details .puge-portfolio-meta-btn ul li.puge-portfolio-single-link{
+	-webkit-transform: translateX(400%);
+	   -moz-transform: translateX(400%);
+	    -ms-transform: translateX(400%);
+	     -o-transform: translateX(400%);
+	        transform: translateX(400%);
+}
+
+.puge-portfolio-details .puge-portfolio-meta-btn ul li.puge-lighbox{
+	-webkit-transform: translateX(-400%);
+	   -moz-transform: translateX(-400%);
+	    -ms-transform: translateX(-400%);
+	     -o-transform: translateX(-400%);
+	        transform: translateX(-400%);
+}
+
+.puge-portfolio-item:hover .puge-portfolio-details .puge-portfolio-meta-btn ul li{
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	   -moz-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+.puge-portfolio-details .puge-portfolio-meta-btn ul li a{
+	display: block;
+	text-align: center;
+}
+
+.puge-portfolio-details .puge-portfolio-meta-btn ul li a i{
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 35px;
+}
+
+
+/* ===================================
+	CONTACT
+====================================== */
+#contact-form {
+	padding: 0 20%;
+}
+
+.puge-contact-section{
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+.puge-contact-section .puge-contact-address p{
+	color: #ffffff;
+}
+
+.puge-contact-section .puge-contact-address ul li{
+	margin-bottom: 25px;
+	font-size: 14px;
+	position: relative;
+	padding: 15px;
+}
+
+.puge-contact-section .puge-contact-address ul li:last-child{
+	margin-bottom: 0;
+}
+
+.puge-contact-section .puge-contact-address ul li i{
+	font-size: 50px;
+	line-height: 55px;
+	color: #ffffff;
+}
+
+.puge-contact-section .puge-contact-form .puge-input-fields{
+	margin-bottom: 20px;
+}
+
+.puge-contact-section .puge-contact-form .puge-input-fields label{
+	display: block;
+	font-size: 14px;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.puge-contact-section .puge-contact-form .puge-input-fields input{
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	border: 1px solid #999999;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.puge-contact-section .puge-contact-form .puge-input-fields textarea{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #999999;
+	padding: 15px;
+}
+
+.puge-contact-section .puge-contact-form input[type='submit']{
+	background-color: #333;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto !important;
+	display: block !important;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 15px 30px;
+	text-align: center;
+	display: inline-block;
+	outline: 0;
+	border: 0px solid;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 	border-radius: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.puge-contact-section .puge-contact-form .puge-input-fields input[type='submit']:hover{
+	color: #ffffff;
+	background-color: #de5c39;
+}
+
+/* ===================================
+	FOOTER
+====================================== */
+footer{
+	background-color: #28292e;
+	padding: 60px;
+	overflow: hidden;
+}
+
+footer .puge-footer-content{
+	text-align: center;
+}
+
+footer .puge-footer-logo{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+footer p{
+	text-align: center;
+	color: #818181;
+	font-size: 11px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+footer ul {
+	display: inline-block;
+}
+
+footer ul li{
+	float: left;
+	margin-right: 15px;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+footer ul li a{
+	font-size: 21px;
+}
+
+footer ul li a i{
+	font-size: 21px;
+	color: #818181;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+footer ul li a:hover i{
+	color: #333;
+}
+
+

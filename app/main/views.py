@@ -1,7 +1,10 @@
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 from flask import Flask,request,render_template, redirect, url_for, abort, flash, request,\
     current_app,make_response
 from flask_login import login_required, current_user
-import sys,os
+import os
 from . import main
 from .forms import PostForm,EditProfileForm,CommentForm,Reset
 from .. import db

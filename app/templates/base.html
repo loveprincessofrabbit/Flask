@@ -1,6 +1,6 @@
 {% extends "bootstrap/base.html" %}
 
-{% block title %}Flasky{% endblock %}
+{% block title %}Flask{% endblock %}
 
 {% block head %}
 {{ super() }}
@@ -61,11 +61,13 @@
     </div>
     {% endfor %}
 
-    {% block page_content %}{% endblock %}
+{% block page_content %}
+{% endblock %}
 </div>
 {% endblock %}
 
 {% block scripts %}
 {{ super() }}
+
 {{ moment.include_moment() }}
 {% endblock %}
